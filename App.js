@@ -1,16 +1,22 @@
 import React, { Component } from 'react';
 import { createStore, applyMiddleware } from 'redux';
 import { Provider } from 'react-redux';
+import createSagaMiddleware from 'redux-saga';
 import { composeWithDevTools } from 'remote-redux-devtools';
 import { AppLoading, Font } from 'expo';
 import { NativeRouter as Router, Route, Switch } from 'react-router-native';
 import { View } from '@shoutem/ui';
 import fonts from './assets/fonts';
 import { StatusBar } from './components';
-import { Intro, Question, Results } from './containers';
+import { Initialize, Intro, Question, Results } from './containers';
 import reducers from './reducers';
+import sagas from './sagas';
 
-const store = createStore(reducers, composeWithDevTools());
+const sagaMiddleware = createSagaMiddleware();
+const composeEnhancers = composeWithDevTools({ realtime: true });
+const store = createStore(reducers, composeEnhancers(applyMiddleware(sagaMiddleware)));
+
+sagaMiddleware.run(sagas);
 
 class App extends Component {
   constructor(props) {
@@ -33,6 +39,7 @@ class App extends Component {
           <Router>
             <Switch>
               <Route path="/" component={Intro} exact />
+              <Route path="/initialize" component={Initialize} />
               <Route path="/question/:round" component={Question} />
               <Route path="/results" component={Results} />
             </Switch>

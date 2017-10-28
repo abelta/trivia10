@@ -1,3 +1,6 @@
+export const ANSWER_RIGHT = 'Answer/RIGHT';
+export const ANSWER_WRONG = 'Answer/WRONG';
+
 export const GAME_RESETTED = 'Game/RESETTED';
 
 export const QUESTIONS_FETCH_FAILED = 'Questions/FETCH_FAILED';

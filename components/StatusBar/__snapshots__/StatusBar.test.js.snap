@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`StatusBar renders properly 1`] = `
+<View
+  style={
+    Object {
+      "height": undefined,
+    }
+  }
+/>
+`;

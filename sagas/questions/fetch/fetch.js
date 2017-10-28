@@ -3,7 +3,7 @@ import * as types from '../../../actions/actionTypes';
 import { fetchFailed, fetchSucceeded } from '../../../actions/questions';
 import { fetch as fetchApi } from '../../../api/questions';
 
-const fetchSent = function* fetchSent(action) {
+const fetchSent = function* fetchSent() {
   try {
     const questions = yield call(fetchApi);
     yield put(fetchSucceeded({ questions }));

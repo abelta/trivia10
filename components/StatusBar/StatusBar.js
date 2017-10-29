@@ -5,7 +5,7 @@ import styles from './styles';
 const StatusBarCustom = () => (
   <View style={styles.statusBar}>
     <StatusBar
-      backgroundColor="black"
+      animated
       barStyle="light-content"
       translucent={false}
       hidden={false}

@@ -2,7 +2,7 @@ import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { Redirect } from 'react-router-native';
-import { Button, Row, Text, Title, View } from '@shoutem/ui';
+import { Button, Heading, Row, Text, Title, View } from '@shoutem/ui';
 import he from 'he';
 import { right as answeredRight, wrong as answeredWrong } from '../../actions/answers';
 import * as constants from '../../constants';
@@ -27,13 +27,19 @@ class Question extends PureComponent {
     if (round === constants.GAME_ROUNDS_TOTAL) return <Redirect to="/results" />;
     return (
       <View styleName="flexible">
-        <Title>{category}</Title>
-        <Text>{he.unescape(text)}</Text>
-        <Text>{round + 1} of {constants.GAME_ROUNDS_TOTAL}</Text>
-        <Row>
-          <Button onPress={() => this.answer(true)}><Text>TRUE</Text></Button>
-          <Button onPress={() => this.answer(false)}><Text>FALSE</Text></Button>
-        </Row>
+        <View styleName="flexible">
+          <Heading>{category}</Heading>
+          <Text styleName="small">{round + 1} of {constants.GAME_ROUNDS_TOTAL}</Text>
+        </View>
+        <View styleName="flexible">
+          <Text>{he.unescape(text)}</Text>
+        </View>
+        <View styleName="flexible">
+          <Row>
+            <Button onPress={() => this.answer(true)}><Title>TRUE</Title></Button>
+            <Button onPress={() => this.answer(false)}><Title>FALSE</Title></Button>
+          </Row>
+        </View>
       </View>
     );
   }

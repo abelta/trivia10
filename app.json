@@ -8,11 +8,9 @@
     "version": "1.0.0",
     "orientation": "portrait",
     "primaryColor": "#cccccc",
-    "icon": "./assets/icon.png",
-    "splash": {
-      "image": "./assets/splash.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+    "icon": "./assets/icons/trivia10.png",
+    "loading": {
+      "icon": "./assets/icons/trivia10.png",
     },
     "packagerOpts": {
       "assetExts": ["ttf", "mp4"]

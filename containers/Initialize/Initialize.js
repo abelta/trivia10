@@ -18,8 +18,8 @@ class Initialize extends PureComponent {
     const { questions, round } = this.props;
     if (round === 0 && questions.length > 0) return <Redirect to="/question" />;
     return (
-      <View styleName="flexible" style={{ justifyContent: 'center' }}>
-        <Spinner style={{ size: 'large' }} />
+      <View styleName="flexible">
+        <Spinner style={{ color: 'grey', size: 200 }} />
       </View>
     );
   }

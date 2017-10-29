@@ -1,0 +1,104 @@
+{
+  "formats": {
+    "font": {
+      "title": "Font",
+      "default": {
+        "fontFamily": "normal",
+        "fontStyle": "normal",
+        "fontWeight": "normal",
+        "fontSize": 20,
+        "color": "rgba(255,255,255,1)"
+      },
+      "constraints": {
+        "fontFamily": {
+          "enum": [ "normal"]
+        },
+        "fontStyle": {
+          "enum": ["normal", "italic"]
+        },
+        "fontWeight": {
+          "enum": ["normal", "bold", "100", "200", "300", "400", "500", "600", "700", "800", "900"]
+        },
+        "fontSize": {
+          "minimum": 12,
+          "maximum": 42
+        }
+      }
+    }
+  },
+  "properties": {
+    "primaryColor": {
+      "type": "string",
+      "format": "color",
+      "title": "Primary color",
+      "default": "rgba(12, 111, 34, 0.5)"
+    },
+    "textFont": {
+      "type": "object",
+      "format": "font",
+      "title": "Text font",
+      "default": {
+        "fontFamily": "normal",
+        "fontStyle": "normal",
+        "fontWeight": "regular",
+        "fontSize": 15,
+        "color": "rgba(255,255,255,1)"
+      }
+    }
+  },
+  "layout": {
+    "sections": [{
+      "title": "Colors",
+      "properties": ["primaryColor"]
+    }, {
+      "title": "Text",
+      "properties": ["textFont"]
+    }]
+  },
+  "shoutem.ui.Button": {
+    "backgroundColor": "lightgrey",
+    "borderRadius": 10,
+    "padding": 10,
+  },
+  "shoutem.ui.Heading": {
+    "color": "darkgrey",
+    "fontSize": 30,
+    "textAlign": "center"
+  },
+  "shoutem.ui.Image": {
+    ".featured": {
+      "width": "100%",
+    }
+  },
+  "shoutem.ui.Row": {
+    "flexDirection": "row",
+    "justifyContent": "space-between",
+    "shoutem.ui.Button": {
+      "flex": 1,
+      "margin": 10,
+    }
+  },
+  "shoutem.ui.Text": {
+    "color": "dimgrey",
+    "fontSize": 20,
+    "textAlign": "center",
+    ".small": {
+      "fontSize": 14
+    }
+  },
+  "shoutem.ui.Title": {
+    "color": "grey",
+    "fontSize": 20,
+    "textAlign": "center"
+  },
+  "shoutem.ui.View": {
+    "padding": 10,
+    "justifyContent": "space-around",
+    ".blue": {
+      "backgroundColor": "blue"
+    },
+    ".flexible": {
+      "flex": 1
+    }
+  }
+}

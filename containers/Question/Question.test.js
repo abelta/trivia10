@@ -15,7 +15,7 @@ const state = {
       category: 'History',
       difficulty: 'Hard',
       text: 'Japan was part of the Allied Powers during World War I.',
-      correctAnswer: 'true',
+      correctAnswer: true,
     },
   ],
 };

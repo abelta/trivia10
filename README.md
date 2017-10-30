@@ -9,6 +9,7 @@ Trivia10 is a demo project showcasing
 * Ajax calls with [Redux-Saga](https://github.com/redux-saga/redux-saga)
 * Selectors and memoization with [Reselect](https://github.com/reactjs/reselect)
 * Routing with [React-Router](https://github.com/ReactTraining/react-router)
+* Mobile components and theming with [Shoutem](https://github.com/shoutem/ui).
 
 ## Try it
 * Install Expo for mobile [IOS](https://itunes.apple.com/app/apple-store/id982107779) or [Android](https://play.google.com/store/apps/details?id=host.exp.exponent)

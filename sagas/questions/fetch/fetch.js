@@ -21,3 +21,4 @@ const fetchSaga = function* fetchSaga() {
 };
 
 export default fetchSaga;
+export { fetchSentSaga, fetchSent };

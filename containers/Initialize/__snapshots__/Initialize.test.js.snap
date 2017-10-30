@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Initialize when questions have been loaded renders properly 1`] = `null`;
+
+exports[`Initialize when questions have not been loaded renders properly 1`] = `
+<View
+  animationOptions={Object {}}
+  onLayout={[Function]}
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+  styleName="flexible"
+  virtual={undefined}
+>
+  <ActivityIndicator
+    animating={true}
+    color="grey"
+    hidesWhenStopped={true}
+    size={200}
+    style={Object {}}
+  />
+</View>
+`;

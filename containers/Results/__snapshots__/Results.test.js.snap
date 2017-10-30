@@ -1,0 +1,174 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Results renders properly 1`] = `
+<View
+  animationOptions={Object {}}
+  onLayout={[Function]}
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+  styleName="flexible"
+  virtual={undefined}
+>
+  <View
+    animationOptions={Object {}}
+    onLayout={[Function]}
+    style={
+      Object {
+        "flex": 1,
+      }
+    }
+    styleName="flexible"
+    virtual={undefined}
+  >
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      animationOptions={Object {}}
+      disabled={false}
+      ellipsizeMode="tail"
+      onLayout={[Function]}
+      style={
+        Object {
+          "backgroundColor": "transparent",
+          "color": "#222222",
+          "fontFamily": "Rubik-Regular",
+          "fontSize": 25,
+          "fontStyle": "normal",
+          "fontWeight": "normal",
+          "lineHeight": 30,
+        }
+      }
+      virtual={undefined}
+    >
+      You scored
+    </Text>
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      animationOptions={Object {}}
+      disabled={false}
+      ellipsizeMode="tail"
+      onLayout={[Function]}
+      style={
+        Object {
+          "backgroundColor": "transparent",
+          "color": "#222222",
+          "fontFamily": "Rubik-Regular",
+          "fontSize": 25,
+          "fontStyle": "normal",
+          "fontWeight": "normal",
+          "lineHeight": 30,
+        }
+      }
+      virtual={undefined}
+    >
+      9/10
+    </Text>
+  </View>
+  <View
+    animationOptions={Object {}}
+    onLayout={[Function]}
+    style={
+      Object {
+        "flex": 1,
+      }
+    }
+    styleName="flexible"
+    virtual={undefined}
+  >
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      animationOptions={Object {}}
+      disabled={false}
+      ellipsizeMode="tail"
+      onLayout={[Function]}
+      style={
+        Object {
+          "backgroundColor": "transparent",
+          "color": "#222222",
+          "fontFamily": "Rubik-Regular",
+          "fontSize": 20,
+          "fontStyle": "normal",
+          "fontWeight": "normal",
+          "lineHeight": 25,
+        }
+      }
+      virtual={undefined}
+    >
+      Want to try again?
+    </Text>
+  </View>
+  <View
+    animationOptions={Object {}}
+    onLayout={[Function]}
+    style={
+      Object {
+        "flex": 1,
+      }
+    }
+    styleName="flexible"
+    virtual={undefined}
+  >
+    <View
+      accessibilityComponentType={undefined}
+      accessibilityLabel={undefined}
+      accessibilityTraits={undefined}
+      accessible={true}
+      collapsable={undefined}
+      hitSlop={undefined}
+      isTVSelectable={true}
+      nativeID={undefined}
+      onLayout={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#ffffff",
+          "borderColor": "#ffffff",
+          "borderRadius": 2,
+          "borderWidth": 1,
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "opacity": 1,
+          "paddingLeft": 15,
+          "paddingRight": 5,
+        }
+      }
+      testID={undefined}
+      tvParallaxProperties={undefined}
+    >
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        animationOptions={Object {}}
+        disabled={false}
+        ellipsizeMode="tail"
+        onLayout={[Function]}
+        style={
+          Object {
+            "backgroundColor": "transparent",
+            "color": "#222222",
+            "fontFamily": "Rubik-Regular",
+            "fontSize": 20,
+            "fontStyle": "normal",
+            "fontWeight": "normal",
+            "lineHeight": 25,
+          }
+        }
+        virtual={undefined}
+      >
+        PLAY AGAIN
+      </Text>
+    </View>
+  </View>
+</View>
+`;

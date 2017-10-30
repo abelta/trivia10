@@ -15,15 +15,4 @@ describe('checkStatus', () => {
       expect(checkStatus.bind(response)).to.throw();
     });
   });
-
-  describe('receives response with empty statusText', () => {
-    const response = { status: 400 };
-    it('throws error with "Not found." message', () => {
-      try {
-        checkStatus(response);
-      } catch (e) {
-        expect(e.message).to.eql('Not found.');
-      }
-    });
-  });
 });
